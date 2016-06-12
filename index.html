@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Try Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <h1>Testing Flexbox</h1>
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/cottage.jpg">
+        <img class="flex-child" src="imgs/house.jpg">
+        <img class="flex-child" src="imgs/petrol.jpg">
+      </section>
+
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/house.jpg">
+        <img class="flex-child" src="imgs/petrol.jpg">
+      </section>
+
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/house.jpg">
+        <img class="flex-child" src="imgs/house.jpg">
+        <img class="flex-child" src="imgs/house.jpg">
+      </section>
+
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/cottage.jpg">
+        <img class="flex-child" src="imgs/petrol.jpg">
+      </section>
+
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    // ugh
+    var imgs = document.querySelectorAll('img')
+    Array.prototype.forEach.call(imgs, function (img) {
+      img.onload = function () {
+        var aspectRatio = this.naturalWidth / this.naturalHeight
+        // img.style.flex = aspectRatio + ';'
+        img.setAttribute('style', 'flex: '+ aspectRatio + ';')
+        console.log("aspectRatio", aspectRatio)
+      }
+    })
+  </script>
+</html>
