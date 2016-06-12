@@ -40,9 +40,7 @@
     Array.prototype.forEach.call(imgs, function (img) {
       img.onload = function () {
         var aspectRatio = this.naturalWidth / this.naturalHeight
-        // img.style.flex = aspectRatio + ';'
         img.setAttribute('style', 'flex: '+ aspectRatio + ';')
-        console.log("aspectRatio", aspectRatio)
       }
     })
   </script>
