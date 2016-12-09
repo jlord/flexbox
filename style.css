@@ -25,6 +25,7 @@ section {
 .flex-container {
   display: flex;
   align-items: stretch;
+  width: 100%;
 }
 
 img {
