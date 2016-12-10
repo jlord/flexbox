@@ -9,28 +9,28 @@
 
     <div class="wrapper">
       <h1>Testing Flexbox</h1>
-      <section class="flex-container">
-        <img class="flex-child" src="imgs/horizontal.jpg">
-        <img class="flex-child" src="imgs/square.jpg">
-        <img class="flex-child" src="imgs/vertical.jpg">
-      </section>
-
-      <section class="flex-container">
-        <img class="flex-child" src="imgs/square.jpg">
-        <img class="flex-child" src="imgs/vertical.jpg">
-      </section>
-
-      <section class="flex-container">
-        <img class="flex-child" src="imgs/square.jpg">
-        <img class="flex-child" src="imgs/square.jpg">
-        <img class="flex-child" src="imgs/square.jpg">
-      </section>
 
       <section class="flex-container">
         <img class="flex-child" src="imgs/horizontal.jpg">
+        <img class="flex-child" src="imgs/square.jpg">
         <img class="flex-child" src="imgs/vertical.jpg">
       </section>
 
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/square.jpg">
+        <img class="flex-child" src="imgs/vertical.jpg">
+      </section>
+
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/square.jpg">
+        <img class="flex-child" src="imgs/square.jpg">
+        <img class="flex-child" src="imgs/square.jpg">
+      </section>
+
+      <section class="flex-container">
+        <img class="flex-child" src="imgs/horizontal.jpg">
+        <img class="flex-child" src="imgs/vertical.jpg">
+      </section>
     </div>
 
   </body>
@@ -40,7 +40,8 @@
     Array.prototype.forEach.call(imgs, function (img) {
       img.onload = function () {
         var aspectRatio = this.naturalWidth / this.naturalHeight
-        img.setAttribute('style', 'flex: '+ aspectRatio + ';')
+        // img.setAttribute('style', 'flex: ' + aspectRatio + ' ' + aspectRatio + ' ' + 0 + ';')
+        img.setAttribute('style', 'flex: ' + aspectRatio + ' ' + aspectRatio + ';')
       }
     })
   </script>

@@ -14,25 +14,31 @@ body {
   max-width: 900px;
   margin: 0 auto;
   background: #efefef;
-  overflow: auto;
-  padding: 0 18px;
-}
-
-section {
-  padding-bottom: 18px;
+  /*overflow: auto;*/
+  /*padding: 0 18px;*/
 }
 
 .flex-container {
   display: flex;
-  align-items: stretch;
-  width: 100%;
+  /*height: 300px;*/
+  /*align-items: stretch;*/
+  /*width: 100%;*/
 }
+
+.flex-child {
+  margin: auto;
+  /*height: inherit;*/
+}
+
+/*section {
+padding-bottom: 18px;
+}*/
 
 img {
   width: 100%;
   height: auto;
 }
 
-img + img {
+/*img + img {
   margin-left: 18px;
-}
+}*/
