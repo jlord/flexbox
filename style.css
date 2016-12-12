@@ -14,12 +14,12 @@ body {
   max-width: 900px;
   margin: 0 auto;
   background: #efefef;
-  /*overflow: auto;*/
-  /*padding: 0 18px;*/
+  padding: 0 18px;
 }
 
 .flex-container {
   display: flex;
+  margin-bottom: 18px;
   /*max-width: 900px;*/
   /*height: 300px;*/
   /*align-items: stretch;*/
@@ -40,6 +40,6 @@ img {
   height: auto;
 }
 
-/*img + img {
+.img-container + .img-container {
   margin-left: 18px;
-}*/
+}
