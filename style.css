@@ -20,6 +20,7 @@ body {
 
 .flex-container {
   display: flex;
+  /*max-width: 900px;*/
   /*height: 300px;*/
   /*align-items: stretch;*/
   /*width: 100%;*/
